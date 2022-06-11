@@ -30,10 +30,10 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Name:</strong>
-                    <input type="text" name="name" value= {{ $cat->name }} class="form-control" placeholder="Name">
+                    <input type="text" name="name" value= "{{ $cat->name }}" class="form-control" placeholder="Name">
                 </div>
             </div>
-            <input type="hidden" name="user_id" value = {{ Auth::user()->id }} >
+            <input type="hidden" name="user_id" value = "{{ Auth::user()->id }}" >
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Description:</strong>

@@ -17,6 +17,16 @@
         </ul>
     </div>
 @endif
+<div class="row">
+    <div class="col-lg-12 margin-tb">
+        <div class="pull-left">
+            <h2>Add New Category</h2>
+        </div>
+        <div class="pull-right">
+            <a class="btn btn-primary" href="/home"> Back</a>
+        </div>
+    </div>
+</div>
 
 <form action="{{ route('categories.store') }}" method="POST">
     @csrf
@@ -52,10 +62,10 @@
                 <td>{{ $cat->name }}</td>
                 <td>{{ $cat->description }}</td>
                 <td>
-                    <a class="btn btn-primary" href="{{ route('categories.edit',$cat->id) }}">Edit</a>
                     <form action="{{ route('categories.destroy',$cat->id) }}" method="POST">
                         @csrf
                         @method('DELETE')
+                        <a class="btn btn-primary" href="{{ route('categories.edit',$cat->id) }}">Edit</a>
                         <button type="submit" class="btn btn-danger">Delete</button>
                     </form>
                 </td>

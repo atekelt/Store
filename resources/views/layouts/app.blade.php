@@ -56,6 +56,9 @@
                                 <a class="nav-link" href="/home">{{ __('Home') }}</a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link" href="/products">{{ __('Add Product') }}</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="/categories">{{ __('Categories') }}</a>
                             </li>
 
